@@ -386,14 +386,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/abstract-art-background-1020317.jpg") top center;
+  background-color: #fcd116;
+  /* background: url("../img/abstract-art-background-1020317.jpg") top center; */
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.1);
+ background: rgba(0, 0, 0, 0.03);
   position: absolute;
   bottom: 0;
   top: 0;
