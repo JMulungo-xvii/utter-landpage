@@ -173,9 +173,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 7px 20px 8px 20px;
     margin-right: 15px;
   }
-  /* .ajuste-serv{
-    text-align: left; text-decoration: none; margin: 80px; margin-top:10px; margin-bottom: -10px; font-weight: bolder; color: #614907; margin-left: 80px; background-color: red;
-  } */
+  
 }
 
 /*--------------------------------------------------------------
@@ -489,6 +487,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 24px;
   }
+  
+    
 }
 
 /*--------------------------------------------------------------
@@ -1019,6 +1019,8 @@ section {
     font-weight: 550;
 
   }
+  
+    
   
   
 }
@@ -1573,9 +1575,82 @@ section {
   color: #fff;
 }
 
-/* .ajust-serv-design{
-  width: 100%;text-align: left; text-decoration: none; margin: 300px; margin-top:10px; margin-bottom: -10px; font-weight: bolder; margin-left: 10px; padding: 10px;
+
+/* portfolio */
+.carousel-cell {
+  width: 65%;
+margin: 5px;
+  }
+/* cell number */
+  .carousel-cell:before {
+    display: block;
+  }
+  
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .carousel-cell {
+      width:100%;
+      margin: 0%;
+     }
+     .carousel-cell img{
+      height: 220px;
+    }
+
 }
-.ajust-serv-contas{
-  width: 100%;text-align: left; text-decoration: none; margin: 350px; margin-top:10px; margin-bottom: -10px; font-weight: bolder; margin-left: 10px;
-} */
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+    .carousel-cell {
+      width:100%;
+      margin: 0%;
+     }
+     .carousel-cell img{
+      height: 220px;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+
+    .carousel-cell {
+      width:100%;
+      margin: 0%;
+     }
+     .carousel-cell img{
+      height: 220px;
+    }
+
+
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  {
+    .carousel-cell {
+      width:100%;
+      margin: 0%;
+     }
+     .carousel-cell img{
+      height: 220px;
+    }
+}
