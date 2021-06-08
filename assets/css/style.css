@@ -1734,8 +1734,35 @@ and (orientation: landscape) {
 @media screen and (max-width:600px){
   .about-section{
       padding: 0;
+      
   }
+  .about-section p{
+    font-size: 14px;
+    
+}
+.extra-about{
+  
+  margin: 0px;
+  padding: 2px;
+  text-align: center;
+}
   .inner-container-about{
       padding: 60px;
   }
+}
+
+.extra-about{
+  background-color: #fcd116;
+  margin: 10px;
+  padding: 22px;
+  text-align: center;
+}
+.extra-about h3{
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+}
+.extra-about a{
+  color: #fff;
+  font-weight: bold;
 }
