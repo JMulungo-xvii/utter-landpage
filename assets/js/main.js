@@ -369,3 +369,16 @@ window.onclick = function(event) {
     modal_3.style.display = "none";
   }
 }
+
+
+/* efeito piscar piscar no publicite*/
+
+function blink(selector) {
+  $(selector).fadeOut('slow', function() {
+      $(this).fadeIn('slow', function() {
+          blink(this);
+      });
+  });
+}
+
+blink('.piscar');

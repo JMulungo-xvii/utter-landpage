@@ -1725,8 +1725,11 @@ and (orientation: landscape) {
 }
 .skills button{
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;
+  padding: 10px;
 }
+.skills button:hover{
+  color: #fff;}
 
 @media screen and (max-width:1200px){
   .inner-container-about{
@@ -1775,12 +1778,6 @@ and (orientation: landscape) {
 }
 
 
-
-
-/*.icon-modal p{
-  font-size:48px;color:rgb(0, 0, 0); text-align: center; margin:0; padding: 0;
-  background-color: rgba(250, 249, 249, 0);
-}*/
 
 
     /* popup */
@@ -2277,3 +2274,16 @@ and (orientation: landscape) {
 }
 
 }
+
+
+
+/* efeito piscar piscar no publicite*/
+
+.piscar a{
+  text-transform: uppercase; font-size: 1.6em; font-weight: bolder;
+  color: #000;
+  }
+  .piscar a:hover{
+    color: rgb(250, 249, 249);
+  }
+
