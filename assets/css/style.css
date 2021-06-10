@@ -1598,6 +1598,7 @@ margin: 5px;
      .carousel-cell img{
       height: 220px;
     }
+    
 
 }
 
@@ -1608,7 +1609,9 @@ margin: 5px;
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-
+    .modal-content p{
+      font-size: 5em;
+    }
 
     .carousel-cell {
       width:100%;
@@ -1617,6 +1620,8 @@ margin: 5px;
      .carousel-cell img{
       height: 220px;
     }
+    
+
 
 }
 
@@ -1637,6 +1642,7 @@ and (orientation: landscape) {
      .carousel-cell img{
       height: 220px;
     }
+    
 
 
 }
@@ -1653,6 +1659,9 @@ and (orientation: landscape) {
      .carousel-cell img{
       height: 220px;
     }
+    .modal-content p {
+      font-size: 6px;
+     }
 }
 
 
@@ -1676,7 +1685,7 @@ and (orientation: landscape) {
   float: right;
   background-color: #fdfdfd;
    padding: 50px;
-  height: 450px;
+  /* height: 450px; */
   /* border: 5px solid hsla(51, 94%, 50%, 0.61); */
   box-shadow:
   50px 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -1710,8 +1719,12 @@ and (orientation: landscape) {
 
 .skills{
   display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 13px;
+}
+.skills button{
+  font-weight: bold;
   font-size: 13px;
 }
 
@@ -1740,12 +1753,6 @@ and (orientation: landscape) {
     font-size: 14px;
     
 }
-.extra-about{
-  
-  margin: 0px;
-  padding: 2px;
-  text-align: center;
-}
   .inner-container-about{
       padding: 60px;
   }
@@ -1768,9 +1775,75 @@ and (orientation: landscape) {
 }
 
 
-/* popup */
+
+
+/*.icon-modal p{
+  font-size:48px;color:rgb(0, 0, 0); text-align: center; margin:0; padding: 0;
+  background-color: rgba(250, 249, 249, 0);
+}*/
+
+
+    /* popup */
 /* The Modal (background) */
 .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(rgba(250, 249, 249, 0.3), rgba(2, 2, 2, 0.1)), url(../img/abstract-art-background-1020317.jpg) fixed center center;
+    background-size: cover;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(194, 173, 103);
+  width: 60%;
+
+
+}
+.modal-content p {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.modal-content h3 {
+  color: #000;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 2px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* popup 2 */
+/* The Modal (background) */
+.modal_2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -1785,25 +1858,422 @@ and (orientation: landscape) {
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content_2 {
+  background: linear-gradient(rgba(250, 249, 249, 0.3), rgba(2, 2, 2, 0.1)), url(../img/abstract-art-background-1020317.jpg) fixed center center;
+    background-size: cover;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid rgb(247, 223, 89);
   width: 60%;
+}
+.modal-content_2 p {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.modal-content_2 h3 {
+  color: #000;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 10px;
 }
 
 /* The Close Button */
-.close {
-  color: #aaaaaa;
+.close_2 {
+  color: #000000;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close_2:hover,
+.close_2:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* popup 3 */
+/* The Modal (background) */
+.modal_3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content_3 {
+  background: linear-gradient(rgba(250, 249, 249, 0.3), rgba(2, 2, 2, 0.1)), url(../img/II.Visão.jpg) fixed center center;
+  background-size: cover;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(235, 194, 14);
+  width: 60%;
+}
+.modal-content_3 p {
+  background-color: rgba(250, 249, 249, 0.644);
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  margin: 80px;
+  padding: 10px;
+}
+.modal-content_3 h3 {
+  color: #000;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 10px;
+}
+
+/* The Close Button */
+.close_3 {
+  color: #000000;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
+.close_3:hover,
+.close_3:focus {
+  color: rgb(255, 255, 255);
   text-decoration: none;
   cursor: pointer;
+}
+
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+      /* Modal Content */
+      .modal-content {
+        padding: 20px;
+        width: 60%;
+      }
+      .modal-content p {
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .modal-content h3 {
+        font-size: 2.5em;
+        margin: 2px;
+      }
+
+      /* The Close Button */
+      .close {
+        font-size: 30px;
+      }
+
+
+      /* popup 2 */
+      
+
+      /* Modal Content */
+      .modal-content_2 {
+         padding: 20px;
+       width: 60%;
+      }
+      .modal-content_2 p {
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+      }
+      .modal-content_2 h3 {
+        font-size: 2.5em;
+        margin: 10px;
+      }
+
+      /* The Close Button */
+      .close_2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+
+      /* popup 3 */
+      /* The Modal (background) */
+    
+      /* Modal Content */
+      .modal-content_3 {
+        padding: 20px;
+        width: 60%;
+      }
+      .modal-content_3 p {
+        font-size: 20px;
+        margin: 80px;
+        padding: 10px;
+      }
+      .modal-content_3 h3 {
+        font-size: 2.5em;
+        margin: 10px;
+      }
+
+      /* The Close Button */
+      .close_3 {
+        font-size: 28px;
+      }
+
+}
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+    /* Modal Content */
+    .modal-content {
+      padding: 10px;
+      width: 96%;
+    
+
+    }
+    .modal-content p {
+     font-size: 14px;
+     margin: 5px;
+      padding: 6px;
+    }
+    .modal-content h3 {
+      font-size: 1.8em;
+      margin: 2px;
+    }
+
+    /* The Close Button */
+    .close {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+   
+
+    /* popup 2 */
+    /* The Modal (background) */
+  
+
+    /* Modal Content */
+    .modal-content_2 {
+     padding: 20px;
+      width: 97%;
+    }
+    .modal-content_2 p {
+     font-size: 14px;
+      margin: 10px;
+      padding: 10px;
+    }
+    .modal-content_2 h3 {
+      font-size: 1.8em;
+      margin: 10px;
+    }
+
+    /* The Close Button */
+    .close_2 {
+      font-size: 35px;
+    }
+
+
+    /* popup 3 */
+    
+    /* Modal Content */
+    .modal-content_3 {
+      padding: 5px;
+      width: 97%;
+    }
+    .modal-content_3 p {
+      font-size: 20px;
+     margin: 20px;
+      padding: 10px;
+    }
+    .modal-content_3 h3 {
+      font-size: 2em;
+      margin: 5px;
+    }
+
+    /* The Close Button */
+    .close_3 {
+      font-size: 28px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    /* Modal Content */
+    .modal-content {
+      padding: 10px;
+      width: 96%;
+    
+
+    }
+    .modal-content p {
+     font-size: 14px;
+     margin: 5px;
+      padding: 6px;
+    }
+    .modal-content h3 {
+      font-size: 1.8em;
+      margin: 2px;
+    }
+
+    /* The Close Button */
+    .close {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+   
+
+    /* popup 2 */
+    /* The Modal (background) */
+  
+
+    /* Modal Content */
+    .modal-content_2 {
+     padding: 20px;
+      width: 97%;
+    }
+    .modal-content_2 p {
+     font-size: 14px;
+      margin: 10px;
+      padding: 10px;
+    }
+    .modal-content_2 h3 {
+      font-size: 1.8em;
+      margin: 10px;
+    }
+
+    /* The Close Button */
+    .close_2 {
+      font-size: 35px;
+    }
+
+
+    /* popup 3 */
+    
+    /* Modal Content */
+    .modal-content_3 {
+      padding: 5px;
+      width: 97%;
+    }
+    .modal-content_3 p {
+      font-size: 20px;
+     margin: 20px;
+      padding: 10px;
+    }
+    .modal-content_3 h3 {
+      font-size: 2em;
+      margin: 5px;
+    }
+
+    /* The Close Button */
+    .close_3 {
+      font-size: 28px;
+    }
+
+  
+    .skills button{
+      margin: 5px;
+    }
+
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+ /* Modal Content */
+ .modal-content {
+  padding: 10px;
+  width: 85%;
+
+
+}
+.modal-content p {
+ font-size: 20px;
+ margin: 10px;
+  padding: 10px;
+}
+.modal-content h3 {
+  font-size: 2.8em;
+  margin: 2px;
+}
+
+/* The Close Button */
+.close {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+/* popup 2 */
+/* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content_2 {
+ padding: 20px;
+  width: 85%;
+}
+.modal-content_2 p {
+ font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.modal-content_2 h3 {
+  font-size: 2.5em;
+  margin: 10px;
+}
+
+/* The Close Button */
+.close_2 {
+  font-size: 35px;
+}
+
+
+/* popup 3 */
+
+/* Modal Content */
+.modal-content_3 {
+  padding: 5px;
+  width: 65%;
+}
+.modal-content_3 p {
+  font-size: 30px;
+ margin: 20px;
+  padding: 18px;
+}
+.modal-content_3 h3 {
+  font-size: 2.8em;
+  margin: 10px;
+}
+
+/* The Close Button */
+.close_3 {
+  font-size: 35px;
+}
+
 }

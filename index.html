@@ -16,6 +16,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,11 +51,11 @@
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Início</a></li>
           <!-- <li><a class="nav-link scrollto" href="#about">Sobre Nós</a></li> -->
-          <li class="dropdown"><a href="#about"><span>Sobre Nós</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#about"><span>Perfil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Contexto</a></li>
-              <li><a href="#">Propósito</a></li>
-              <li><a href="#">Visão</a></li>
+              <li><a href="#about">Sobre Nós</a></li>
+              <li><a href="#values">Valores - Modus Operandi</a></li>
+              <li><a href="#partners">Parcerias</a></li>
             </ul>
           </li>
           
@@ -65,7 +67,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#packages">Pacotes</a></li>
-         <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+         <li><a class="nav-link scrollto" href="#portfolio">Portifólio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -110,42 +112,20 @@
       <p class="text">
         Desde o planeamento estratégico, gestão e promoção de conteúdos à redação publicitária (copywriting), a nossa equipa profissional encontra-se devidamente preparada e com alto senso de responsabilidade para melhor responder às necessidades do seu pequeno empreendimento ou negócio.
     </p>
-      <!-- <div class="skills">
-          <span>Contexto</span>
-          <span>Propósito</span>
-          <span>>Visão</span>
+      <div class="skills">
+         <span><button class="btn btn-warning" id="myBtn">Contexto</button></span>
+          <span><button class="btn btn-warning" id="myBtn_2">Propósito</button></span>
+          <span><button class="btn btn-warning" id="myBtn_3">Visão</button></span>
          
-      </div> -->
+      </div>
   </div>
 </div>
 </section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3 extra-about">
-      <h3>Contexto</h3>
-      <p>Romper o tecido digital Moçambicano  aplicando as melhores práticas e mais recentes tendências da indústria global de mídia nas PME’s.</p>
-      </p>
-      <span><button id="myBtn">Ver Mais...</button></span>
-     
-    </div>
-    <div class="col-sm-5 extra-about">
-      <h3>Propósito</h3>
-      <p>A μtter surge como jogador-chave e veículo em resposta ao corrente cenário para posicionar o seu negócio na vanguarda do “novo normal”, especilcamente no que diz respeito à alta performance, alcance e optimização de conteúdos via mobile e desenvolvimento relevante e sustententável de marca.</p>
-      <p><a href="">Ver Mais...</a></p>
-    </div>
-    <div class="col-sm-3 extra-about">
-      <h3>Visão</h3>        
-      <p>Impulsionadores do progresso no novo tecido digital Moçambicano até 2025.</p>
-    <br><br>
-      <p><a href="">Ver Mais...</a></p>
-    </div>
-  </div>
-</div>
 <!-- Trigger/Open The Modal -->
 <!-- <button id="myBtn">Open Modal</button> -->
 
-<!-- The Modal -->
+<!-- The Modal 1-->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
@@ -165,6 +145,43 @@
   </div>
 
 </div>
+
+<!-- The Modal 2-->
+<div id="myModal_2" class="modal_2">
+
+  <!-- Modal content -->
+  <div class="modal-content_2">
+    <span class="close_2">&times;</span>
+    <h3 style="font-weight: bold;">Propósito</h3>
+    <p>A propagação da pandemia do COVID-19 em Moçambique,
+      desde Março de 2020, apresenta ainda uma vasta janela de
+      oportunidade para PME’s, cujo acesso, habilidades e orçamentos
+      para marketing tornam-se progressivamente mais limitados.
+       
+      </p>
+      <p>A μtter surge como mais-valia e veículo em resposta ao corrente
+        cenário para posicionar o seu negócio na vanguarda do “novo
+        normal”, especificamente no que diz respeito à alta
+        performance, optimização de conteúdos para mobile e
+        desenvolvimento relevante e sustententável de marca.</p>
+  </div>
+
+</div>
+
+<!-- The Modal 1-->
+<div id="myModal_3" class="modal_3">
+
+  <!-- Modal content -->
+  <div class="modal-content_3">
+    <span class="close_3">&times;</span>
+    <!-- <span class="icon-modal"><p><i class="fa fa-eye"></i></p></span> -->
+    <h3 style="font-weight: bold;">Visão</h3>
+    <p>Impulsionadores do progresso no novo tecido digital Moçambicano até 2025.
+      </p>
+   
+  </div>
+
+</div>
 <br>
 <hr>
 <!-- WHY -->
@@ -174,7 +191,7 @@
       <div class="image col-lg-6" style='background-image: url("assets/img/modu-operand.jpg");' data-aos="fade-right"></div>
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
        
-        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+        <div id="values" class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
           <h3 style="font-size: 22px; font-weight: bolder; margin-left: 50px; padding: 5px; margin-top: 20px; color: #f0af00;">Valores: Modus Operandi [Como Fazemos?]</h3>
           <i class="bx bx-cube-alt"></i>
           <h4>Centricidade e Sinergia:</h4>
@@ -217,7 +234,7 @@
 <!-- CLOSE TITLE -->
 
 
-    <section id="serv-digital" class="services">
+    <section id="services-digital" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -229,7 +246,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Gestão de Redes Sociais</a></h4>
               <ul type="none" class="ajust-serv">
                 <li>+ Definição de pilares de conteúdos</li>
@@ -248,7 +265,7 @@
 
           <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <div class="icon"><i class="bx bx-network-chart"></i></div>
               <h4><a href="">Marketing de Influência:</a></h4>
               <ul type="none" class="ajust-serv">
                 <li>+ Rede de +150 infuenciadores digitais(Micro & Top-tier)</li>
@@ -258,7 +275,7 @@
             </div>
           </div>
         <!-- web -->
-        <div class="section-title" id="serv-web">
+        <div class="section-title" id="services-web">
           <br>
           <h2>Serviços</h2>
           <p>Web</p>
@@ -267,7 +284,7 @@
 
           <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="ri-database-2-line"></i></div>
+              <div class="icon"><i class="bx bx-code-block"></i></div>
               <h4><a href="">Programação, Hospedagem e Gestão</a></h4>
               <ul type="none" class="ajust-serv">
                 <li>+ Desenvolvimento de websites</li>
@@ -288,7 +305,7 @@
 
           <div  class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <div class="icon"><i class="bx bx-check-circle"></i></div>
               <h4><a href="">Verificação de Contas:</a></h4>
               <p><ul type="none"  class="ajust-serv">
                 <li>+ Google (Maps)</small></li>
@@ -303,7 +320,7 @@
 <!-- end web -->
 
 <!-- producao -->
-<div class="section-title" id="serv-production">
+<div class="section-title" id="services-production">
   <br>
   <h2>Serviços</h2>
   <p>Produção</p>
@@ -312,7 +329,7 @@
 
           <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-pencil"></i></div>
+              <div class="icon"><i class="bx bx-bulb"></i></div>
               <h4><a href="">Design:</a></h4>
               <ul type="none" class="ajust-serv">
                 <li>+ Manuais de identidade corporativa (Brochuras)</li>
@@ -349,10 +366,10 @@
    
  <!-- ======= Cta Section ======= -->
  <section id="cta" class="cta">
-  <div class="container" data-aos="zoom-in">
+  <div id="packages" class="container" data-aos="zoom-in">
 
     <div class="text-center">
-      <h3 style="color: #f0af00; font-size: 40px;">Nossos pacotes</h3>
+      <h3 style="color: #f0af00; font-size: 40px;" >Nossos pacotes</h3>
       <p>Todos os pacotes são personalizáveis à sua necessidade</p>
       <a class="cta-btn" href="#">Baixar Brochura de Pacotes</a>
     </div>
@@ -361,7 +378,7 @@
 </section><!-- End Cta Section -->
 <!-- ======= Portifolio Section ======= -->
 
-<div class="container" data-aos="zoom-in">
+<div  id="portfolio" class="container" data-aos="zoom-in">
 
   <div class="text-center">
     <h3 style="color: #f0af00; font-size: 50px; font-weight: bold;">Portifolio</h3>
@@ -395,7 +412,7 @@
 
     <!-- ======= Features Partners Section ======= -->
     <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
+      <div  id="partners" class="container" data-aos="fade-up">
         <div class="row">
           <h3 style="color: #f0af00; font-size: 50px; font-weight: bold; text-align: center;">Parceiros</h3>
           <div class="image col-lg-6" style='background-image: url("assets/img/parcerias.png");' data-aos="fade-right"></div>
@@ -461,8 +478,8 @@
     
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+    <section class="contact">
+      <div  id="contact" class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Contactos</h2>
@@ -568,9 +585,11 @@
             <h4>Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Perfil</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Serviços</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#packages">Pacotes</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portifolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#packages">Parceiros</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contactos</a></li>
           
             </ul>
@@ -579,9 +598,9 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Nossos Serviços</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#service-digital">Digital</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#service-web">Web</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#service-production">Produção</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services-digital">Digital</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services-web">Web</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services-production">Produção</a></li>
               
             </ul>
           </div>
