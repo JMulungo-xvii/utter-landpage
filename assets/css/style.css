@@ -641,15 +641,7 @@ section {
 /*--------------------------------------------------------------
 # Serviços
 --------------------------------------------------------------*/
-#teste{
-  /* padding: 80px 0; */
-  background: url("../img/pexels-anna-nekrashevich-6801871.jpg")no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
- 
 
-}
 
 .services .icon-box {
   text-align: center;
@@ -714,7 +706,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(201, 195, 195, 0.2)), url("../img/color-concrete-design-122458.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(90, 86, 76, 0.3)), url("../img/pexels-rotek.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1310,36 +1302,21 @@ and (orientation: landscape) {
 }
 
 @media screen and (max-width:600px){
-  .about-section{
-      padding: 0;
-      
-  }
-  .about-section p{
-    font-size: 14px;
-    
-}
-  .inner-container-about{
-      padding: 60px;
-  }
+  .about-section{padding: 0;}
+  .about-section p{font-size: 13px;}
+  .inner-container-about{  padding: 40px;}
 }
 
-.extra-about{
-  background-color: #fcd116;
-  margin: 10px;
-  padding: 22px;
-  text-align: center;
-}
-.extra-about h3{
-  color: #fff;
-  font-size: 2em;
-  font-weight: bold;
-}
-.extra-about a{
-  color: #fff;
-  font-weight: bold;
+@media screen and (max-width:570px){
+  .about-section{ padding: 0;}
+  .about-section p{font-size: 11px;}
+  .inner-container-about{padding: 35px;}
 }
 
 
+.extra-about{background-color: #fcd116;margin: 10px;padding: 22px;text-align: center;}
+.extra-about h3{color:#fff;font-size: 2em;font-weight: bold;}
+.extra-about a{color: #fff;font-weight: bold;}
 
 
     /* popup */
@@ -1367,37 +1344,16 @@ and (orientation: landscape) {
   padding: 20px;
   border: 1px solid rgb(194, 173, 103);
   width: 60%;
-
-
 }
-.modal-content p {
-  color: #000;
-  font-size: 18px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-.modal-content h3 {
-  color: #000;
-  font-size: 2.5em;
-  text-align: center;
-  margin: 2px;
-}
+.modal-content p {color: #000;font-size: 18px;text-align: center;margin: 10px;padding: 10px;}
+.modal-content h3 {color: #000;font-size: 2.5em;text-align: center;margin: 2px;}
 
 /* The Close Button */
-.close {
-  color: #000;
-  float: right;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: right;
+.close {color: #000;float: right;font-size: 30px;font-weight: bold;text-align: right;
 }
 
 .close:hover,
-.close:focus {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
+.close:focus {color: rgb(255, 255, 255);text-decoration: none;cursor: pointer;
 }
 
 /* popup 2 */
@@ -1472,11 +1428,11 @@ and (orientation: landscape) {
 
 /* Modal Content */
 .modal-content_3 {
-  background: linear-gradient(rgba(250, 249, 249, 0.3), rgba(2, 2, 2, 0.1)), url(../img/II.Visão.jpg) fixed center center;
+  background: linear-gradient(rgba(252, 186, 6, 0.658), rgba(250, 249, 249, 0.5)), url(../img/II.Visão.jpg) fixed center center;
   background-size: cover;
   margin: auto;
   padding: 20px;
-  border: 1px solid rgb(235, 194, 14);
+  border: 1px solid rgb(51, 50, 47);
   width: 60%;
 }
 .modal-content_3 p {
@@ -1834,15 +1790,15 @@ and (orientation: landscape) {
 .close_3 {
   font-size: 35px;
 }
-
 }
 
 
 
 /* efeito piscar piscar no publicite*/
 
+
 .piscar a{
-  text-transform: uppercase; font-size: 1.6em; font-weight: bolder;
+  text-transform: uppercase; font-size: 2em; font-weight: bolder;
   color: #000;
   }
   .piscar a:hover{
